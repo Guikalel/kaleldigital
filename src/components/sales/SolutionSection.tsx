@@ -32,6 +32,7 @@ export default function SolutionSection() {
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-2xl mx-auto">
             O método mais simples e acessível do Brasil para você começar a faturar com Inteligência Artificial — mesmo sem nenhuma experiência.
+          </p>
         </div>
 
         {/* Product Image */}
