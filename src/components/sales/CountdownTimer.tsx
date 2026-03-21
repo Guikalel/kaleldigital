@@ -4,16 +4,7 @@ import { Clock } from "lucide-react";
 const DURATION = 2 * 60 * 60; // 2 hours in seconds
 
 export default function CountdownTimer() {
-  const [seconds, setSeconds] = useState(() => {
-    const saved = sessionStorage.getItem("countdown-end");
-    if (saved) {
-      const remaining = Math.max(0, Math.floor((parseInt(saved) - Date.now()) / 1000));
-      return remaining;
-    }
-    const end = Date.now() + DURATION * 1000;
-    sessionStorage.setItem("countdown-end", end.toString());
-    return DURATION;
-  });
+  const [seconds, setSeconds] = useState(DURATION);
 
   useEffect(() => {
     if (seconds <= 0) return;
