@@ -17,9 +17,9 @@ export default function Index() {
       <SocialProofNotification />
       <ExitIntentPopup />
       <HeroSection />
-      <PricingSection />
       <ProblemSection />
       <SolutionSection />
+      <PricingSection />
       <BenefitsSection />
       <TestimonialsSection />
       <FaqSection />

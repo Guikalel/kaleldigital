@@ -57,18 +57,18 @@ export default function HeroSection() {
           className="max-w-3xl mx-auto mt-8 md:mt-12 animate-fade-up"
           style={{ animationDelay: "400ms" }}
         >
-          <div className="aspect-video bg-card border border-border rounded-xl overflow-hidden">
+          <div className="relative aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-border/50">
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover bg-black"
               controls
               playsInline
               preload="metadata"
-              poster=""
             >
               <source src="/videos/vsl.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos.
             </video>
           </div>
-          <p className="text-xs text-muted-foreground mt-3">▶ Assista o vídeo e entenda como funciona</p>
+          <p className="text-xs text-muted-foreground mt-3 opacity-70">▶ Assista o vídeo e entenda como funciona</p>
         </div>
       </div>
     </section>
