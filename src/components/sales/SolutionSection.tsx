@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ArrowRight } from "lucide-react";
+import productCover from "@/assets/product-cover.png";
 
 const before = [
   "Perdido sem saber por onde começar",
