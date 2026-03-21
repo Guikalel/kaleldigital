@@ -17,11 +17,11 @@ export default function Index() {
       <SocialProofNotification />
       <ExitIntentPopup />
       <HeroSection />
+      <PricingSection />
       <ProblemSection />
       <SolutionSection />
       <BenefitsSection />
       <TestimonialsSection />
-      <PricingSection />
       <FaqSection />
       <FinalCtaSection />
     </div>
