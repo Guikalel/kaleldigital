@@ -1,4 +1,4 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const CTA_LINK = "https://pay.wiapy.com/zd--basAsV";
@@ -52,15 +52,21 @@ export default function HeroSection() {
           </a>
         </div>
 
-        {/* VSL Placeholder */}
+        {/* VSL Video */}
         <div
           className="max-w-3xl mx-auto mt-8 md:mt-12 animate-fade-up"
           style={{ animationDelay: "400ms" }}
         >
-          <div className="aspect-video bg-card border border-border rounded-xl flex items-center justify-center cursor-pointer group hover:border-primary/40 transition-colors">
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-brand flex items-center justify-center group-hover:scale-105 transition-transform">
-              <Play className="w-6 h-6 md:w-8 md:h-8 text-primary-foreground ml-1" />
-            </div>
+          <div className="aspect-video bg-card border border-border rounded-xl overflow-hidden">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+              preload="metadata"
+              poster=""
+            >
+              <source src="/videos/vsl.mp4" type="video/mp4" />
+            </video>
           </div>
           <p className="text-xs text-muted-foreground mt-3">▶ Assista o vídeo e entenda como funciona</p>
         </div>
