@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ArrowRight } from "lucide-react";
+import productCover from "@/assets/product-cover.png";
 
 const before = [
   "Perdido sem saber por onde começar",
@@ -33,6 +34,16 @@ export default function SolutionSection() {
             O método mais simples e acessível do Brasil para você começar a faturar com Inteligência Artificial — mesmo sem nenhuma experiência.
           </p>
         </div>
+
+        {/* Product Image */}
+        <div className={`flex justify-center mb-8 md:mb-12 ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "50ms" }}>
+          <img
+            src={productCover}
+            alt="100 Prompts para Ganhar Dinheiro com IA - KalelDigital"
+            className="w-48 md:w-64 lg:w-72 rounded-xl md:rounded-2xl shadow-2xl shadow-primary/20 border border-primary/20"
+          />
+        </div>
+
 
         {/* Before vs After */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">

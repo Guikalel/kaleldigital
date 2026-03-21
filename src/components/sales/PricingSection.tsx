@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Check, Shield, CreditCard, ArrowRight } from "lucide-react";
+import productCover from "@/assets/product-cover.png";
 
 const CTA_LINK = "https://pay.wiapy.com/zd--basAsV";
 
@@ -26,6 +27,15 @@ export default function PricingSection() {
         </div>
 
         <div className={`bg-card border-2 border-primary/40 rounded-xl md:rounded-2xl p-6 md:p-8 glow-primary ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "100ms" }}>
+          {/* Product Image */}
+          <div className="flex justify-center mb-6">
+            <img
+              src={productCover}
+              alt="100 Prompts para Ganhar Dinheiro com IA"
+              className="w-32 md:w-40 rounded-lg shadow-lg shadow-primary/10"
+            />
+          </div>
+
           <div className="text-center mb-6">
             <p className="text-xs md:text-sm text-muted-foreground line-through">De R$ 197,00</p>
             <div className="flex items-baseline justify-center gap-1 mt-1">
