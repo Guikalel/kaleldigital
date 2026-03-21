@@ -6,7 +6,6 @@ const modules = [
   { icon: Video, title: "Módulo 2: Ferramentas Práticas", desc: "As melhores ferramentas gratuitas e pagas para começar hoje." },
   { icon: Zap, title: "Módulo 3: Primeiras Vendas", desc: "Como oferecer serviços de IA e fechar seus primeiros clientes." },
   { icon: Target, title: "Módulo 4: Escala e Automação", desc: "Automatize processos e multiplique seus ganhos." },
-  { icon: Users, title: "Grupo de Alunos", desc: "Troque experiências com outros alunos e amplie seu networking." },
   { icon: MessageSquare, title: "Atualizações Constantes", desc: "Conteúdo sempre atualizado com as últimas novidades em IA." },
   { icon: BarChart3, title: "Templates Prontos", desc: "Modelos de prompts, propostas e scripts validados." },
   { icon: Gift, title: "Bônus Surpresa", desc: "Material extra exclusivo para quem garantir hoje." },
