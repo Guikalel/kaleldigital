@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { X, Shield } from "lucide-react";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CTA_LINK = "https://pay.wiapy.com/zd--basAsV";
 
@@ -41,6 +42,7 @@ export default function ExitIntentPopup() {
             href={CTA_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInitiateCheckout}
             className="block w-full bg-gradient-brand text-primary-foreground font-heading font-bold py-3 md:py-4 rounded-lg text-sm md:text-base hover:opacity-90 active:scale-[0.98] transition-all"
           >
             Quero Garantir Agora

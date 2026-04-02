@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ArrowRight, Shield, Zap, Clock } from "lucide-react";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CTA_LINK = "https://pay.wiapy.com/zd--basAsV";
 
@@ -21,6 +22,7 @@ export default function FinalCtaSection() {
             href={CTA_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInitiateCheckout}
             className="inline-flex items-center justify-center gap-2 bg-gradient-brand text-primary-foreground font-heading font-bold px-6 md:px-12 py-3 md:py-5 rounded-lg text-sm md:text-lg hover:opacity-90 active:scale-[0.98] transition-all animate-pulse-glow"
           >
             <span className="sm:hidden">Quero Começar</span>
