@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CTA_LINK = "https://pay.wiapy.com/zd--basAsV";
 
@@ -44,6 +45,7 @@ export default function HeroSection() {
             href={CTA_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInitiateCheckout}
             className="w-full sm:w-auto bg-gradient-brand text-primary-foreground font-heading font-bold px-6 md:px-10 py-3 md:py-4 rounded-lg text-sm md:text-lg hover:opacity-90 active:scale-[0.98] transition-all animate-pulse-glow inline-flex items-center justify-center gap-2"
           >
             <span className="sm:hidden">Quero Começar</span>

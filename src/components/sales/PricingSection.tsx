@@ -1,6 +1,7 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Check, Shield, CreditCard, ArrowRight } from "lucide-react";
 import productCover from "@/assets/product-cover.png";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CTA_LINK = "https://pay.wiapy.com/zd--basAsV";
 
@@ -58,6 +59,7 @@ export default function PricingSection() {
             href={CTA_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInitiateCheckout}
             className="block w-full bg-gradient-brand text-primary-foreground font-heading font-bold py-3 md:py-4 rounded-lg text-sm md:text-lg text-center hover:opacity-90 active:scale-[0.98] transition-all animate-pulse-glow"
           >
             <span className="sm:hidden flex items-center justify-center gap-2">Garantir Agora <ArrowRight className="w-4 h-4" /></span>
